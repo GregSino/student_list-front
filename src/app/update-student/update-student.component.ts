@@ -12,7 +12,7 @@ export class UpdateStudentComponent implements OnInit {
 
   id: number;
   student: Student;
-  submitted: boolean;
+  submitted = false;
 
   constructor(private route: ActivatedRoute, private router: Router,
               private studentService: StudentService) { }
@@ -38,6 +38,7 @@ export class UpdateStudentComponent implements OnInit {
   }
 
   onSubmit(): void {
+    this.submitted = true;
     this.updateStudent();
   }
 
