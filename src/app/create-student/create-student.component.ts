@@ -40,7 +40,7 @@ export class CreateStudentComponent implements OnInit {
   }
 
   gotoList(): void {
-    this.router.navigate(['/students']);
+    this.router.navigate(['students']);
   }
 
 }
